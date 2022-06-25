@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-25T12:24:09.534Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" etag="sQQvnYMy_8NpGcnrk1C7" version="20.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-25T12:25:16.205Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" etag="HHuhiZFy4BIURasr5Y4j" version="20.0.3" type="github">
   <diagram id="RLPOEAdhcGwVArlybR_r" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -188,11 +188,12 @@
           <mxGeometry x="530" y="440" width="150" height="20" as="geometry" />
         </mxCell>
         <mxCell id="av6z6smTz8OFn_1u3UOK-4" value="&lt;span style=&quot;text-align: left;&quot;&gt;RaiseActionEvent(shouldloot,true)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="520" y="530" width="200" height="20" as="geometry" />
+          <mxGeometry x="610" y="530" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="av6z6smTz8OFn_1u3UOK-5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=0.45;exitY=0.967;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="MGv8dR7Y4dB5yCq7bM32-92" parent="1">
+        <mxCell id="av6z6smTz8OFn_1u3UOK-5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;exitX=0.56;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.72;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="MGv8dR7Y4dB5yCq7bM32-100" parent="1" target="av6z6smTz8OFn_1u3UOK-4">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="617" y="530" as="targetPoint" />
+            <mxPoint x="754" y="520" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="av6z6smTz8OFn_1u3UOK-6" value="&lt;span style=&quot;text-align: left;&quot;&gt;RaiseActionEvent(fighting,true)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
