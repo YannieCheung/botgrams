@@ -1,1 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2022-06-29T21:42:07.378Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" version="20.0.3" etag="_07jTkR7U--FRSIuGp5O" type="github"><diagram id="H9-QVIB4ShXuoiM-LzIO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-29T22:03:19.150Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" etag="_8WCJj_KUsg6RX8t9j36" version="20.0.3" type="github">
+  <diagram id="H9-QVIB4ShXuoiM-LzIO" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6aTukIGOlWaT6OcC9Asg-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6aTukIGOlWaT6OcC9Asg-1" target="6aTukIGOlWaT6OcC9Asg-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="255" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6aTukIGOlWaT6OcC9Asg-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="240" y="50" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6aTukIGOlWaT6OcC9Asg-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6aTukIGOlWaT6OcC9Asg-5" target="6aTukIGOlWaT6OcC9Asg-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6aTukIGOlWaT6OcC9Asg-5" value="stop moving" style="rounded=0;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="150" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6aTukIGOlWaT6OcC9Asg-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6aTukIGOlWaT6OcC9Asg-8" target="6aTukIGOlWaT6OcC9Asg-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6aTukIGOlWaT6OcC9Asg-8" value="press F1" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=0;arcSize=40;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="212.5" y="230" width="85" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="6aTukIGOlWaT6OcC9Asg-10" value="施放&lt;br&gt;Loop 7 times" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=0;arcSize=40;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="195" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
