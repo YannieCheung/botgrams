@@ -1,297 +1,106 @@
-<mxfile host="app.diagrams.net" modified="2022-08-11T14:30:12.606Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.47" etag="UvIP2YOlKyX4aaF5Sc7M" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-17T07:59:08.084Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="BcRSBzD1xuKTs_pH6mBr" version="20.2.4" type="github">
   <diagram id="aAD4_vOi2qTQGrxeu-Le" name="Page-1">
-    <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="zAEfCfQDjYskYP452-Zi-2" value="Startup" style="html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="160" width="110" height="50" as="geometry" />
+        <mxCell id="LIoeyiH8uazR3BOrm7db-1" value="BotController" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="380" height="440" as="geometry" />
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-3" value="new" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-2">
+        <mxCell id="LIoeyiH8uazR3BOrm7db-2" value="WowProcess" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="60" y="90" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-3" value="WowScreen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="195" y="90" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-7" value="List&amp;lt;DataFrame&amp;gt;&lt;br&gt;DataFrameConfiguration&lt;br&gt;LoadConfiguration()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="105" y="150" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-9" value="AddonReader(List&amp;lt;DataFrame&amp;gt;)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="100" y="210" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-12" value="NpcNameFinder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="60" y="290" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-13" value="DataFrameConfiguration" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="125" y="120" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-14" value="ActionFactory" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="190" y="290" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-19" value="ScreenshotRefreshThread&lt;br&gt;&lt;b&gt;for :&lt;/b&gt;&lt;br&gt;WowScreen&amp;nbsp;DoScreenshot(NpcNameFinder)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="40" y="330" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-21" value="AddonRefreshThread&lt;br&gt;&lt;b&gt;for :&lt;/b&gt;AddonReader.AddonRefresh()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-1">
+          <mxGeometry x="40" y="240" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-18" value="WowScreen" style="swimlane;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="320" height="275" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-34" value="DoScreenshot" style="swimlane;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-18">
+          <mxGeometry x="30" y="30" width="260" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-35" value="List&amp;lt;NpcPosition&amp;gt;&lt;br&gt;NpcNameFinder&amp;nbsp;RefreshNpcPositions()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-34">
+          <mxGeometry x="15" y="30" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-36" value="Bitmap (GR)&lt;br&gt;NpcNameFinder&amp;nbsp;Screenshot" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-34">
+          <mxGeometry x="15" y="70" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-37" value="List&amp;lt;NpcPosition&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontStyle=1;dashed=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-34">
+          <mxGeometry x="35" y="120" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-38" value="GR.DrawEllipse in line with NpcPosition" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-34">
+          <mxGeometry x="62.5" y="130" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-39" value="OnScreenChanged.invoke&#xa;（Screenshot.base64）" style="shape=mxgraph.sysml.sendSigAct;whiteSpace=wrap;align=center;dashed=1;strokeColor=#33FFFF;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-34">
+          <mxGeometry x="48.75" y="180" width="162.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-29" value="ScreenshotComponent.razor" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="840" y="157.5" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-27" value="OnInitialized()" style="shape=mxgraph.sysml.accEvent;flipH=1;whiteSpace=wrap;align=center;dashed=1;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;fontStyle=1;strokeColor=#33FFFF;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-29">
+          <mxGeometry x="25" y="40" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-30" value="WowScreen.OnScreenChanged&lt;br&gt;+= this.ImageChanged" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-29">
+          <mxGeometry x="45" y="45" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-31" value="ImageChanged(o,args)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-29">
+          <mxGeometry x="57.5" y="90" width="135" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="LIoeyiH8uazR3BOrm7db-19" target="LIoeyiH8uazR3BOrm7db-34">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="300" y="360" as="sourcePoint" />
-            <mxPoint x="210" y="195" as="targetPoint" />
+            <mxPoint x="540" y="425" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-5" value="new" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+        <mxCell id="LIoeyiH8uazR3BOrm7db-40" value="Image" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="290" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="LIoeyiH8uazR3BOrm7db-40">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="320" y="195" as="sourcePoint" />
-            <mxPoint x="370" y="185" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-7" value="new" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-12" target="zAEfCfQDjYskYP452-Zi-8">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="480" y="185" as="sourcePoint" />
-            <mxPoint x="540" y="185" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;AddonReader&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ FrameColor:Color[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Refresh():&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="540" y="150" width="120" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;WowData&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;b&gt;+ event AddonDataChanged&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddonRefresh():&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="150" width="120" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;BagReader&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;bagItems:BagItem[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Read():BagItem[]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="495" y="-40" width="115" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;EquipmentReader&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;equipment:long[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Read():long[]&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="364" y="-40" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-19" value="new" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-12" target="zAEfCfQDjYskYP452-Zi-17">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="260" y="270" as="sourcePoint" />
-            <mxPoint x="180" y="270" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-20" value="new" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-12" target="zAEfCfQDjYskYP452-Zi-18">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="270" y="280" as="sourcePoint" />
-            <mxPoint x="190" y="280" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-23" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;LevelTracker&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;* PlayerReader&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;PredictedLevelTime:DateTime&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;MobsKilled:long&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;TimeToLevel:string&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ Update():&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="-40" width="120" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-24" value="new" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-12" target="zAEfCfQDjYskYP452-Zi-23">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="440" y="160" as="sourcePoint" />
-            <mxPoint x="424" y="50" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-27" value="BotHeader.razor&lt;br&gt;&lt;br&gt;wowData.AddonDataChanged +=StateHasChanged()" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
-          <mxGeometry x="90" y="490" width="170" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-28" value="inject" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-12" target="zAEfCfQDjYskYP452-Zi-27">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="440" y="160" as="sourcePoint" />
-            <mxPoint x="424" y="50" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-29" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;Bot&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;* WowData&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;blacklist&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;Agent: GoapAgent&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;playerDirection&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;stopMoving&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;npcNameFinder&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;stuckDetector&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;followRouteAction&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;walkToCorpseAction&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;RouteInfo&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+: &lt;b&gt;event OnScreenChanged&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+:&amp;nbsp;DoWork():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+:&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;DoScreenshot():&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+: OnActionEvent():&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="300" width="120" height="250" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-13" value="AddonRefresh()" style="swimlane;fillColor=#fff2cc;strokeColor=#d6b656;shadow=0;rounded=0;sketch=0;glass=0;swimlaneFillColor=default;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="370" y="240" width="120" height="30" as="geometry">
-            <mxRectangle x="370" y="240" width="339" height="230" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-21" value="- equipmentReader.Read()//填充自己的&lt;span style=&quot;text-align: left;&quot;&gt;equipment&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-13">
-          <mxGeometry x="14" y="90" width="290" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-16" value="+ AddonReader.Refresh()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-13">
-          <mxGeometry x="14" y="30" width="160" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-22" value="- bagReader.Read()//填充自己的bagItems" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-13">
-          <mxGeometry x="14" y="60" width="250" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-25" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ LevelTracker.Update();&lt;/span&gt;&lt;/div&gt;//填充自己的&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;PredictedLevelTime&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;，MobsKilled，&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;TimeToLevel&lt;/span&gt;&lt;span style=&quot;text-align: left; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-13">
-          <mxGeometry x="14" y="120" width="350" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-26" value="[if]触发事件AddonDataChanged，绑定于BotHeader.razor" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-13">
-          <mxGeometry x="14" y="170" width="330" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-9" value="Refresh()" style="swimlane;startSize=23;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="540" y="240" width="120" height="30" as="geometry">
-            <mxRectangle x="560" y="260" width="240" height="100" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-10" value="调用 WowScreen.GetAddonBitmap&lt;br&gt;填充FrameColor" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-9">
-          <mxGeometry x="25" y="30" width="210" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-11" value="调用PlayerReader.Updated()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-9">
-          <mxGeometry x="25" y="70" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-30" value="new-z" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=0;entryY=0.578;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" target="zAEfCfQDjYskYP452-Zi-29">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="320" y="195" as="sourcePoint" />
-            <mxPoint x="380" y="195" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-31" value="Index.razor&lt;br&gt;&lt;br&gt;+ ToggleBot()&amp;nbsp;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-100" y="490" width="170" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-32" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;BotController&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ WowBot:Bot&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AddonRefreshThread():&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;ToggleBotStatus():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="150" width="120" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-33" value="ToggleBotStatus()" style="swimlane;startSize=23;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=none;swimlaneFillColor=default;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="200" y="240" width="120" height="30" as="geometry">
-            <mxRectangle x="200" y="240" width="200" height="130" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-34" value="- bot.DoWork() | Thread" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-33">
-          <mxGeometry x="15" y="45" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-35" value="- bot.DoScreenshot() | Thread" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-33">
-          <mxGeometry x="15" y="75" width="180" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-36" value="call" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-31" target="zAEfCfQDjYskYP452-Zi-33">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="380" y="205" as="sourcePoint" />
-            <mxPoint x="185" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-37" value="Screenshot.razor&lt;br&gt;&lt;br&gt;BC.Bot.OnScreenChanged += this.ImageChanged&lt;br&gt;&lt;br&gt;+&amp;nbsp;ImageChanged()&amp;nbsp;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;align=left;" vertex="1" parent="1">
-          <mxGeometry x="-290" y="490" width="170" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-39" value="" style="curved=1;endArrow=classic;html=1;rounded=0;strokeColor=#9C11A6;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-13" target="zAEfCfQDjYskYP452-Zi-27">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="340" as="sourcePoint" />
-            <mxPoint x="280" y="640" as="targetPoint" />
+            <mxPoint x="770" y="300" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="320" y="500" />
-              <mxPoint x="230" y="640" />
+              <mxPoint x="800" y="300" />
+              <mxPoint x="800" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-40" value="" style="curved=1;endArrow=classic;html=1;rounded=0;strokeColor=#9C11A6;dashed=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="zAEfCfQDjYskYP452-Zi-37">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="370" y="550" as="sourcePoint" />
-            <mxPoint x="185" y="570" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="330" y="560" />
-              <mxPoint x="240" y="690" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-42" value="AddonReader" style="swimlane;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="80" y="540" width="400" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-97" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#9C11A6;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-41" target="zAEfCfQDjYskYP452-Zi-29">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="LIoeyiH8uazR3BOrm7db-43" value="AddonRefresh" style="swimlane;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-42">
+          <mxGeometry x="30" y="40" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-41" value="DoScreenshot()" style="swimlane;fillColor=#fff2cc;strokeColor=#d6b656;shadow=0;rounded=0;sketch=0;glass=0;swimlaneFillColor=default;startSize=23;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="370" y="550" width="120" height="30" as="geometry">
-            <mxRectangle x="370" y="540" width="330" height="90" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-44" value="WowScreen GetAddonBitmap" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-43">
+          <mxGeometry x="40" y="30" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-47" value="[if]触发事件&lt;b style=&quot;background-color: initial;&quot;&gt;OnScreenChanged，&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;绑定于&lt;/span&gt;&lt;span style=&quot;&quot;&gt;Screenshot&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: center;&quot;&gt;.razor&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-41">
-          <mxGeometry x="17.5" y="45" width="330" height="30" as="geometry" />
+        <mxCell id="LIoeyiH8uazR3BOrm7db-46" value="List&amp;lt;DataFrame&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fontStyle=1;dashed=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-43">
+          <mxGeometry x="5" y="80" width="190" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-48" value="Set&lt;GoapAction&gt;" style="swimlane;fillColor=#fff2cc;strokeColor=#d6b656;shadow=0;rounded=0;sketch=0;glass=0;swimlaneFillColor=default;startSize=23;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-240" y="679" width="420" height="490" as="geometry">
-            <mxRectangle x="-240" y="679" width="120" height="30" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-45" value="Color[] = BitMap" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-43">
+          <mxGeometry x="40" y="90" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-49" value="&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="17.5" y="45" width="20" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-50" value="Set&amp;lt;GoapAction&amp;gt;" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="17.5" y="35" width="110" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-55" value="FollowRouteAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="35" width="110" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-62" value="LootAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="60" width="110" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-63" value="PostKillLootAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="90" width="110" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-64" value="TargetDeadAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="120" width="110" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-67" value="walkToCorpseAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="150" width="110" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-68" value="UseHealingPotionAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="180" width="130" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-69" value="TimedPressAKeyAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="210" width="130" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-70" value="ApproachTargetAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="237.5" width="130" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-71" value="Warrior" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="265" width="60" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-74" value="Rogue" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="310" width="60" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-73" value="Priest" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="350" width="60" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-72" value="Druid" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="170" y="390" width="60" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-75" value="WarriorCombatAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="270" y="265" width="130" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-76" value="BuffAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="270" y="280" width="130" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-78" value="EatOrBandageAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="270" y="295" width="130" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-79" value="BuffPressAKeyAction" style="html=1;rounded=0;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-48">
-          <mxGeometry x="270" y="310" width="130" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-85" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;GoapAgent&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;actionState: map(GoapKey,object):&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ AvailableActions: GoapAction[]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+ OnActionEvent()&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="300" width="120" height="240" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-86" value="OnActionEvent()" style="swimlane;fillColor=#fff2cc;strokeColor=#d6b656;shadow=0;rounded=0;sketch=0;glass=0;swimlaneFillColor=default;startSize=23;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="600" y="540" width="120" height="30" as="geometry">
-            <mxRectangle x="600" y="540" width="150" height="70" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-87" value="&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-86">
-          <mxGeometry x="17.5" y="45" width="20" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-91" value="更新&lt;span style=&quot;text-align: left;&quot;&gt;actionState&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-86">
-          <mxGeometry x="10" y="29.5" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-98" value="DoScreenshot()" style="swimlane;fillColor=#fff2cc;strokeColor=#d6b656;shadow=0;rounded=0;sketch=0;glass=0;swimlaneFillColor=default;startSize=23;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="370" y="610" width="120" height="30" as="geometry">
-            <mxRectangle x="370" y="610" width="330" height="90" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-99" value="&lt;b style=&quot;background-color: initial;&quot;&gt;if Key=abort，use hearthstone&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-98">
-          <mxGeometry x="17.5" y="45" width="200" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-80" value="DoWork()" style="swimlane;fillColor=#fff2cc;strokeColor=#d6b656;shadow=0;rounded=0;sketch=0;glass=0;swimlaneFillColor=default;startSize=23;" vertex="1" collapsed="1" parent="1">
-          <mxGeometry x="370" y="580" width="120" height="30" as="geometry">
-            <mxRectangle x="370" y="580" width="457" height="450" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-81" value="&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-80">
-          <mxGeometry x="17.5" y="45" width="20" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-82" value="Set&amp;lt;GoapAction&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-80">
-          <mxGeometry x="17.5" y="30" width="120" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-83" value="for(Set)" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-80">
-          <mxGeometry x="17.5" y="70" width="120" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-84" value="other action OnActionEvent" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-80">
-          <mxGeometry x="230" y="95" width="150" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-92" value="GoapAgent OnActionEvent" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-80">
-          <mxGeometry x="230" y="30" width="150" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-93" value="this OnActionEvent" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;gradientColor=none;" vertex="1" parent="zAEfCfQDjYskYP452-Zi-80">
-          <mxGeometry x="230" y="65" width="150" height="25" as="geometry" />
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-94" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="zAEfCfQDjYskYP452-Zi-80" source="zAEfCfQDjYskYP452-Zi-92" target="zAEfCfQDjYskYP452-Zi-83">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="100" y="-30" as="sourcePoint" />
-            <mxPoint x="-155" y="-130" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-95" value="listen" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="zAEfCfQDjYskYP452-Zi-80" source="zAEfCfQDjYskYP452-Zi-93" target="zAEfCfQDjYskYP452-Zi-83">
-          <mxGeometry x="-0.1231" y="10" relative="1" as="geometry">
-            <mxPoint x="200" y="57.5" as="sourcePoint" />
-            <mxPoint x="147.5" y="92.5" as="targetPoint" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-96" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="zAEfCfQDjYskYP452-Zi-80" source="zAEfCfQDjYskYP452-Zi-84" target="zAEfCfQDjYskYP452-Zi-83">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="240" y="87.5" as="sourcePoint" />
-            <mxPoint x="147.5" y="92.5" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zAEfCfQDjYskYP452-Zi-100" value="new" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zAEfCfQDjYskYP452-Zi-29" target="zAEfCfQDjYskYP452-Zi-85">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-5" y="500" as="sourcePoint" />
-            <mxPoint x="210" y="265" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-47" value="WowScreen GetAddonBitmap" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-43">
+          <mxGeometry x="40" y="140" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
