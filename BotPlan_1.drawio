@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-17T10:37:16.258Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="TmCKaEu2J9YSXERKRcUL" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-17T13:48:51.636Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="e0Ijy-oaAEboiWgyjzIO" version="20.2.4" type="github">
   <diagram id="aAD4_vOi2qTQGrxeu-Le" name="Page-1">
     <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,10 +52,10 @@
         <mxCell id="LIoeyiH8uazR3BOrm7db-82" value="RouteInfo&lt;br&gt;ActionFactory&amp;nbsp;RouteInfo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-65">
           <mxGeometry x="45" y="140" width="165" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="LIoeyiH8uazR3BOrm7db-83" value="GoapAgent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-65">
+        <mxCell id="LIoeyiH8uazR3BOrm7db-83" value="GoapAgent(Set&amp;lt;GoapAction&amp;gt;)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-65">
           <mxGeometry x="45" y="180" width="165" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="LIoeyiH8uazR3BOrm7db-84" value="ActionThread" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-65">
+        <mxCell id="LIoeyiH8uazR3BOrm7db-84" value="ActionThread(GoapAgent)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-65">
           <mxGeometry x="45" y="210" width="165" height="20" as="geometry" />
         </mxCell>
         <mxCell id="LIoeyiH8uazR3BOrm7db-86" value="Set&lt;GoapAction&gt;" style="shape=mxgraph.sysml.accEvent;flipH=1;whiteSpace=wrap;align=center;dashed=1;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;fontStyle=1;strokeColor=#33FFFF;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-65">
@@ -174,8 +174,8 @@
         <mxCell id="LIoeyiH8uazR3BOrm7db-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=#FF0000;" edge="1" parent="1" source="LIoeyiH8uazR3BOrm7db-21" target="LIoeyiH8uazR3BOrm7db-44">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-210" y="325" />
-              <mxPoint x="-210" y="965" />
+              <mxPoint x="-200" y="325" />
+              <mxPoint x="-200" y="965" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -332,16 +332,33 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="480" y="583" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="490" y="593" />
+              <mxPoint x="490" y="613" />
               <mxPoint x="490" y="679" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="LIoeyiH8uazR3BOrm7db-176" value="ActionThread" style="swimlane;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-530" y="510" width="315" height="295" as="geometry" />
+          <mxGeometry x="-530" y="510" width="320" height="295" as="geometry" />
         </mxCell>
         <mxCell id="LIoeyiH8uazR3BOrm7db-177" value="GoapPerformAction" style="swimlane;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-176">
-          <mxGeometry x="20" y="35" width="280" height="200" as="geometry" />
+          <mxGeometry x="20" y="35" width="300" height="225" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-178" value="if playerReader ItemsAreBroken&#xa;this.OnActionEvent&#xa;{GoapKey.abort, true}" style="shape=mxgraph.sysml.sendSigAct;whiteSpace=wrap;align=center;dashed=1;strokeColor=#33FFFF;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-177">
+          <mxGeometry x="43.120000000000005" y="35" width="193.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-179" value="GoapAction&amp;nbsp;&lt;br&gt;GoapAgent GetAction()" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-177">
+          <mxGeometry x="53.43" y="95" width="173.13" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-181" value="GoapAction is a new Action ?&lt;br&gt;Yes DoRest and assign this.CurrentAction" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-177">
+          <mxGeometry x="26.71" y="135" width="246.57" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-182" value="GoapAction PerformAction()" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-177">
+          <mxGeometry x="53.43" y="175" width="173.13" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="LIoeyiH8uazR3BOrm7db-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;strokeColor=#FF0000;" edge="1" parent="1" source="LIoeyiH8uazR3BOrm7db-179">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-480" y="655" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
