@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-18T08:47:49.913Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="Ris_u7iaRQaEhx1wXJc1" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-18T15:59:45.903Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="Kn1X1k71bvafimiCd0Ce" version="20.2.4" type="github">
   <diagram id="aAD4_vOi2qTQGrxeu-Le" name="Page-1">
     <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -370,35 +370,55 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="LIoeyiH8uazR3BOrm7db-186" value="GoapAgent" style="swimlane;fontColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="-540" y="920" width="320" height="390" as="geometry" />
+          <mxGeometry x="-540" y="920" width="330" height="510" as="geometry" />
         </mxCell>
         <mxCell id="LIoeyiH8uazR3BOrm7db-187" value="GetAction()" style="swimlane;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="LIoeyiH8uazR3BOrm7db-186" vertex="1">
           <mxGeometry x="20" y="30" width="280" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="Z0kySEoGgwtKMhYofTn3-2" value="if&amp;nbsp;&amp;nbsp;Blacklist.IsTargetBlacklisted()&lt;br&gt;press F3&lt;br&gt;&lt;div&gt;&amp;nbsp; UpdateWorldState()&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-187">
+        <mxCell id="Z0kySEoGgwtKMhYofTn3-2" value="if&amp;nbsp;&amp;nbsp;Blacklist.IsTargetBlacklisted()&lt;br&gt;press F3&lt;br&gt;&lt;div&gt;&amp;nbsp; UpdateWorldState()&lt;/div&gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;" parent="LIoeyiH8uazR3BOrm7db-187" vertex="1">
           <mxGeometry x="53.43000000000001" y="30" width="173.13" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="Z0kySEoGgwtKMhYofTn3-3" value="Action = Plan.peek()&lt;br&gt;(Set&amp;lt;Action&amp;gt;, WorldState)" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-187">
+        <mxCell id="Z0kySEoGgwtKMhYofTn3-3" value="Action = Plan.peek()&lt;br&gt;(Set&amp;lt;Action&amp;gt;, WorldState)" style="whiteSpace=wrap;html=1;strokeColor=#000000;" parent="LIoeyiH8uazR3BOrm7db-187" vertex="1">
           <mxGeometry x="53.43000000000001" y="85" width="173.13" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="Z0kySEoGgwtKMhYofTn3-4" value="GetWorldState()/UpdateWorldState()" style="swimlane;strokeColor=#6c8ebf;startSize=23;fillColor=#dae8fc;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-186">
-          <mxGeometry x="20" y="180" width="280" height="190" as="geometry" />
+        <mxCell id="Z0kySEoGgwtKMhYofTn3-4" value="GetWorldState()/UpdateWorldState()" style="swimlane;strokeColor=#6c8ebf;startSize=23;fillColor=#dae8fc;" parent="LIoeyiH8uazR3BOrm7db-186" vertex="1">
+          <mxGeometry x="20" y="180" width="300" height="220" as="geometry" />
         </mxCell>
-        <mxCell id="Z0kySEoGgwtKMhYofTn3-5" value="Set&amp;lt;Map&amp;lt;GoapKey, object&amp;gt;&amp;gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="Z0kySEoGgwtKMhYofTn3-4">
-          <mxGeometry x="53.43000000000001" y="30" width="173.13" height="45" as="geometry" />
+        <mxCell id="Z0kySEoGgwtKMhYofTn3-5" value="Set&amp;lt;Map&amp;lt;GoapKey, object&amp;gt;&amp;gt;" style="whiteSpace=wrap;html=1;strokeColor=#000000;" parent="Z0kySEoGgwtKMhYofTn3-4" vertex="1">
+          <mxGeometry x="20.000000000000007" y="30" width="173.13" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="Z0kySEoGgwtKMhYofTn3-6" value="hastarget&lt;br&gt;targetisalive&lt;br&gt;incombat&lt;br&gt;withinpullrange&lt;br&gt;incombatrange&lt;br&gt;pulled&lt;br&gt;isdead" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="Z0kySEoGgwtKMhYofTn3-4">
-          <mxGeometry x="53.43" y="75" width="173.13" height="105" as="geometry" />
+        <mxCell id="Z0kySEoGgwtKMhYofTn3-6" value="hastarget&lt;br&gt;targetisalive&lt;br&gt;incombat&lt;br&gt;withinpullrange&lt;br&gt;incombatrange&lt;br&gt;pulled&lt;br&gt;isdead&lt;br&gt;&lt;b&gt;for:&lt;/b&gt;Dict&amp;lt;GoapKey,o&amp;gt; &lt;b&gt;add &lt;/b&gt;Map" style="whiteSpace=wrap;html=1;strokeColor=#000000;" parent="Z0kySEoGgwtKMhYofTn3-4" vertex="1">
+          <mxGeometry x="20" y="75" width="173.13" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="Z0kySEoGgwtKMhYofTn3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontColor=#FF0000;strokeColor=#FF0000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="LIoeyiH8uazR3BOrm7db-186">
+        <mxCell id="1-PHWr54O4HuZL9scPUV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;strokeColor=#FF0000;" edge="1" parent="Z0kySEoGgwtKMhYofTn3-4" source="1-PHWr54O4HuZL9scPUV-3">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-210" y="601.25" as="targetPoint" />
+            <mxPoint x="193" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PHWr54O4HuZL9scPUV-3" value="PlayerReader" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="Z0kySEoGgwtKMhYofTn3-4">
+          <mxGeometry x="223.13" y="110" width="76.87" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PHWr54O4HuZL9scPUV-1" value="OnActionEvent(o,e)" style="swimlane;strokeColor=#00FFFF;fillColor=#dae8fc;dashed=1;" vertex="1" parent="LIoeyiH8uazR3BOrm7db-186">
+          <mxGeometry x="20" y="410" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PHWr54O4HuZL9scPUV-2" value="Update&lt;br&gt;Dict&amp;lt;GoapKey,object&amp;gt;&lt;br&gt;by e" style="whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1-PHWr54O4HuZL9scPUV-1">
+          <mxGeometry x="58.43" y="35" width="173.13" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0kySEoGgwtKMhYofTn3-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontColor=#FF0000;strokeColor=#FF0000;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-220" y="1200" as="targetPoint" />
             <Array as="points">
               <mxPoint x="-200" y="340" />
-              <mxPoint x="-200" y="1090" />
+              <mxPoint x="-200" y="1200" />
             </Array>
             <mxPoint x="60" y="340" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="1-PHWr54O4HuZL9scPUV-8" value="GoapAction" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="1500" width="330" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1-PHWr54O4HuZL9scPUV-9" value="WalkToCorpseAction Cost = 1" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="1610" width="330" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
