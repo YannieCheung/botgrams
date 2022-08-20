@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-19T19:43:56.361Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="iSLMx2NUQPMe64lXlA51" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-20T09:00:48.199Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.81 Safari/537.36 Edg/104.0.1293.54" etag="L14ySY47c8nLRHc7w--z" version="20.2.5" type="github">
   <diagram id="aAD4_vOi2qTQGrxeu-Le" name="Page-1">
     <mxGraphModel dx="3076" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -70,7 +70,7 @@
         <mxCell id="LIoeyiH8uazR3BOrm7db-86" value="Set&lt;GoapAction&gt;" style="shape=mxgraph.sysml.accEvent;flipH=1;whiteSpace=wrap;align=center;dashed=1;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;fontStyle=1;strokeColor=#33FFFF;" parent="LIoeyiH8uazR3BOrm7db-65" vertex="1">
           <mxGeometry x="27.5" y="250" width="212.5" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="LIoeyiH8uazR3BOrm7db-88" value="a.ActionEventArgs+=&lt;br&gt;ActionThread.OnActionEvent&lt;br&gt;&amp;nbsp;NpcNameFinder.OnActionEvent&lt;br&gt;GoapAgent.OnActionEvent&lt;br&gt;otherAction.OnActionEvent" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LIoeyiH8uazR3BOrm7db-65" vertex="1">
+        <mxCell id="LIoeyiH8uazR3BOrm7db-88" value="a.ActionEventArgs+=&lt;br&gt;ActionThread.OnActionEvent&lt;br&gt;GoapAgent.OnActionEvent&lt;br&gt;otherAction.OnActionEvent" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="LIoeyiH8uazR3BOrm7db-65" vertex="1">
           <mxGeometry x="27.5" y="250" width="182.5" height="80" as="geometry" />
         </mxCell>
         <mxCell id="LIoeyiH8uazR3BOrm7db-174" value="ToggleBotStatus" style="swimlane;strokeColor=#000000;" parent="LIoeyiH8uazR3BOrm7db-1" vertex="1">
@@ -554,6 +554,84 @@
         </mxCell>
         <mxCell id="jK9HnRBI8OhwGK3CTVrV-69" value="KeyAction" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-650" y="298.75" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-71" value="ItemsBroken" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1520" y="760" width="200" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-72" value="CheckIfActionCanRun()&lt;br&gt;playerReader.PlayerBitValues&lt;br&gt;ItemsAreBroken" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-71">
+          <mxGeometry x="10" y="30" width="175" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-73" value="PerformAction()&lt;br&gt;Frozen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-71">
+          <mxGeometry x="10" y="85" width="175" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-74" value="WalkToCorpseGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1300" y="760" width="220" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-86" value="OnActionEvent(o,e)" style="swimlane;strokeColor=#00FFFF;fillColor=#dae8fc;dashed=1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-74">
+          <mxGeometry x="20" y="90" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-98" value="NeedToReset&lt;br&gt;Stack&amp;lt;WowPoint&amp;gt; Clear()&lt;br&gt;CorpseLocation is (0,0)" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-86">
+          <mxGeometry x="15" y="38.75" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-75" value="TargetDeadGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1050" y="760" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-76" value="LootGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1530" y="1000" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-78" value="CombatGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1300" y="1000" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-92" value="OnActionEvent(o,e)" style="swimlane;strokeColor=#00FFFF;fillColor=#dae8fc;dashed=1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-78">
+          <mxGeometry x="10" y="85" width="180" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-95" value="if e.key is newtarget&lt;br&gt;for: List&amp;lt;KeyAction&amp;gt;&lt;br&gt;ResetCooldown()&lt;br&gt;if e.key is pulled&lt;br&gt;LastPulled is Now" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-92">
+          <mxGeometry x="15" y="30" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-79" value="PullTargetGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1050" y="1000" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-80" value="ParallelGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="760" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-81" value="PostKillLootGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="1000" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-82" value="ApproachTargetGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1530" y="1240" width="200" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-93" value="OnActionEvent(o,e)" style="swimlane;strokeColor=#00FFFF;fillColor=#dae8fc;dashed=1;startSize=23;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-82">
+          <mxGeometry x="10" y="70" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-94" value="o is not this&lt;br&gt;NeedReset&lt;br&gt;if e.key is fight&lt;br&gt;LastFight is Now" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-93">
+          <mxGeometry x="20" y="30" width="150" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-83" value="AdhocGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1300" y="1240" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-84" value="WrongZoneGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1050" y="1240" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-85" value="FollowRouteGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="1240" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-88" value="OnActionEvent(o,e)" style="swimlane;strokeColor=#00FFFF;fillColor=#dae8fc;dashed=1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-85">
+          <mxGeometry x="10" y="100" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-97" value="o is not this&lt;br&gt;sholdMount&amp;nbsp; is true" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-88">
+          <mxGeometry x="15" y="40" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-89" value="CorpseRunGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1540" y="1490" width="220" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-90" value="OnActionEvent(o,e)" style="swimlane;strokeColor=#00FFFF;fillColor=#dae8fc;dashed=1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-89">
+          <mxGeometry x="20" y="90" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-96" value="NeedReset&lt;br&gt;Stack&amp;lt;WowPoint&amp;gt; Clear()" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=1 1;" vertex="1" parent="jK9HnRBI8OhwGK3CTVrV-90">
+          <mxGeometry x="20" y="30" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jK9HnRBI8OhwGK3CTVrV-91" value="WaitGoal" style="swimlane;dashed=1;dashPattern=1 1;" vertex="1" parent="1">
+          <mxGeometry x="-1300" y="1490" width="200" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
