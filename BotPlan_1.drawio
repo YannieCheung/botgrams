@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-24T07:09:09.552Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63" etag="BUJbtEXPjH95uVIAjdS0" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-24T12:23:30.315Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.102 Safari/537.36 Edg/104.0.1293.63" etag="SpDivHXYOu9udfnzdnfR" version="20.2.7" type="github">
   <diagram id="aAD4_vOi2qTQGrxeu-Le" name="Page-1">
     <mxGraphModel dx="3076" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1124,6 +1124,26 @@
         </mxCell>
         <mxCell id="t3oBDkoMaOUDrSTPtpV3-13" value="&lt;span style=&quot;&quot;&gt;即当技能可用使，CanRun返回true&lt;br&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="t3oBDkoMaOUDrSTPtpV3-11">
           <mxGeometry x="11" y="90" width="229" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="t3oBDkoMaOUDrSTPtpV3-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t3oBDkoMaOUDrSTPtpV3-14" target="t3oBDkoMaOUDrSTPtpV3-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3oBDkoMaOUDrSTPtpV3-14" value="Press Up D" style="rounded=1;whiteSpace=wrap;html=1;arcSize=40;fontColor=#000000;fillColor=#ffffc0;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="1220" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="t3oBDkoMaOUDrSTPtpV3-21" value="return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="t3oBDkoMaOUDrSTPtpV3-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="1305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3oBDkoMaOUDrSTPtpV3-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t3oBDkoMaOUDrSTPtpV3-19" target="t3oBDkoMaOUDrSTPtpV3-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t3oBDkoMaOUDrSTPtpV3-19" value="Combat?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="1185" y="1290" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t3oBDkoMaOUDrSTPtpV3-22" value="" style="whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontColor=#000000;rounded=1;arcSize=40;" vertex="1" parent="1">
+          <mxGeometry x="1172.5" y="1380" width="105" height="15" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
