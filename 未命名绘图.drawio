@@ -1,1 +1,233 @@
-<mxfile host="app.diagrams.net" modified="2022-09-15T14:57:58.146Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" version="20.3.1" etag="3n2WNj2rC-mnWgIOkyY6" type="github"><diagram id="PhULyKFc4fnvmoWd6CRj">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-15T21:54:21.141Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="LBUpRGtprUr4EfAy8Xqd" version="20.3.1" type="github">
+  <diagram id="PhULyKFc4fnvmoWd6CRj" name="第 1 页">
+    <mxGraphModel dx="1926" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-1" value="Main" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-2" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;startArrow=none;" edge="1" source="S3Ig7KOjezHUJ2qZzQC2-25" parent="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="130" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-3" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;Log" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="125" y="140" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-4" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-1" target="S3Ig7KOjezHUJ2qZzQC2-3">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="170" y="240" as="targetPoint" />
+            <mxPoint x="170" y="150" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-9" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;CommadLine options" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="125" y="200" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-10" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;startArrow=none;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-3" target="S3Ig7KOjezHUJ2qZzQC2-9">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="130" y="260" as="targetPoint" />
+            <mxPoint x="130" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-12" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; 1.File exist&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; frame_config.json&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; addon_config.json&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2.Options pid has custom param&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; and wowprocess is exist" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="125" y="270" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-13" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;startArrow=none;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-9" target="S3Ig7KOjezHUJ2qZzQC2-12">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="130" y="430" as="targetPoint" />
+            <mxPoint x="130" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-15" value="Stop" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-17" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;rounded=0;startArrow=none;" edge="1" source="S3Ig7KOjezHUJ2qZzQC2-19" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="-65" y="140" width="10" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-20" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;rounded=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-15" target="S3Ig7KOjezHUJ2qZzQC2-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-60" y="120" as="sourcePoint" />
+            <mxPoint x="-60" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-21" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=-0.1;exitY=0.839;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-12" target="S3Ig7KOjezHUJ2qZzQC2-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="320" as="sourcePoint" />
+            <mxPoint x="40" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-22" value="not exist" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S3Ig7KOjezHUJ2qZzQC2-21">
+          <mxGeometry x="-0.7499" y="-2" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-23" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0.033;exitY=0.658;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-9" target="S3Ig7KOjezHUJ2qZzQC2-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="134" y="330.34000000000003" as="sourcePoint" />
+            <mxPoint x="-44.67000000000007" y="329.65999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-24" value="not options" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S3Ig7KOjezHUJ2qZzQC2-23">
+          <mxGeometry x="-0.7499" y="-2" relative="1" as="geometry">
+            <mxPoint x="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-25" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;config services" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="125" y="360" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-26" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;startArrow=none;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-12" target="S3Ig7KOjezHUJ2qZzQC2-25">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="130" y="430" as="targetPoint" />
+            <mxPoint x="130" y="330" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-28" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;startArrow=none;" edge="1" source="S3Ig7KOjezHUJ2qZzQC2-30" parent="1">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="350" y="560" as="targetPoint" />
+            <mxPoint x="350" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-29" value="ConfigureServices" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-30" value="&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;CreateLogger" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="345" y="360" width="10" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-31" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;" edge="1" parent="1" target="S3Ig7KOjezHUJ2qZzQC2-30">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="350" y="560" as="targetPoint" />
+            <mxPoint x="350" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-32" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;exitX=1.133;exitY=0.183;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-25" target="S3Ig7KOjezHUJ2qZzQC2-30">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="170" y="370" as="sourcePoint" />
+            <mxPoint x="220" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-33" value="Validate" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="480" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-34" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;startArrow=none;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-35">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="560" y="530" as="targetPoint" />
+            <mxPoint x="360" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-35" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="555" y="400" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-36" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-33" target="S3Ig7KOjezHUJ2qZzQC2-35">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="560" y="530" as="targetPoint" />
+            <mxPoint x="560" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-37" value="" style="swimlane;startSize=0;dashed=1;dashPattern=1 4;" vertex="1" collapsed="1" parent="1">
+          <mxGeometry x="570" y="400" width="50" height="40" as="geometry">
+            <mxRectangle x="570" y="400" width="285" height="200" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-41" value="&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 1.Get Wow Process(-1)&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2.Get Win Rect(handle)&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 3.new AddonConfig(process)&amp;nbsp; json - config&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 4.Get Addon Version&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 5.if title author command version = null then&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;delete addon and addon_config file&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 6.if frame_config=null framedata = no valid then&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;frame_config delete&lt;br&gt;&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="S3Ig7KOjezHUJ2qZzQC2-37">
+          <mxGeometry x="-15" y="20" width="300" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-42" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=0.2;exitY=0.172;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-35" target="S3Ig7KOjezHUJ2qZzQC2-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="134" y="330.34000000000003" as="sourcePoint" />
+            <mxPoint x="-44.67000000000007" y="329.65999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-43" value="T/F" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S3Ig7KOjezHUJ2qZzQC2-42">
+          <mxGeometry x="-0.7499" y="-2" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-44" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=-0.067;exitY=0.243;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-30" target="S3Ig7KOjezHUJ2qZzQC2-19">
+          <mxGeometry x="-0.3311" y="-1" relative="1" as="geometry">
+            <mxPoint x="340" y="420" as="sourcePoint" />
+            <mxPoint x="-10" y="420" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-45" value="F" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="S3Ig7KOjezHUJ2qZzQC2-44">
+          <mxGeometry x="-0.7499" y="-2" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-46" value="logger&lt;br&gt;CancellationTokenSource&lt;br&gt;IEnvironment&amp;nbsp;Headless&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;WowProcess(options.pid)&lt;/font&gt;&lt;br&gt;StartupClientVersion(wowprocess)&amp;nbsp;&lt;br&gt;DataConfig=Load(SCVersion.Path)&lt;br&gt;WowScreen(logger,wowprocess)&lt;br&gt;WowProcessInput(logger,cts,wowprocess)&lt;br&gt;ExecGameCommand(logger,cts,wowProcessInput)&lt;br&gt;AddonConfigurator(logger,wowprocess) - root:addon_config.json&lt;br&gt;MinimapNodeFinder(logger,wowScreen)&lt;br&gt;IGrindSessionDAO&amp;nbsp;LocalGrindSessionDAO(dataconfig) -&amp;nbsp;History - *.json&amp;nbsp;&amp;nbsp;&lt;br&gt;WorldMapAreaDB(dataConfig) - DBC - WorldMapArea.json&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;IPPather&lt;/font&gt;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22CancellationTokenSource%22%20style%3D%22text%3Bhtml%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3BwhiteSpace%3Dwrap%3Brounded%3D0%3Bdashed%3D1%3BdashPattern%3D1%204%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22400%22%20y%3D%22440%22%20width%3D%2260%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;" vertex="1" parent="1">
+          <mxGeometry x="355" y="410" width="395" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-49" value="GetPather" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="690" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-50" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-49">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="770" y="680" as="targetPoint" />
+            <mxPoint x="780" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-51" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="765" y="600" width="10" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-54" value="RemotePathingAPIV3等" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="970" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-55" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;startArrow=none;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-56">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="1050" y="920" as="targetPoint" />
+            <mxPoint x="780" y="130" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-56" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="610" width="10" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-57" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-54" target="S3Ig7KOjezHUJ2qZzQC2-56">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="1050" y="920" as="targetPoint" />
+            <mxPoint x="1050" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-58" value="1.RemotePathingAPIV3&lt;br&gt;areaDB、new cts&lt;br&gt;Client = new AnTcpClient(ip,port)&lt;br&gt;Start thread&amp;nbsp;ObserveConnection&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if Client.IsConnected=null then&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;Client.Connect() &lt;font color=&quot;#ff0000&quot;&gt;//A&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;cts.wait(2000)&amp;nbsp;&lt;br&gt;&lt;br&gt;2.PingServer&lt;br&gt;cts.cancelafter(2000)&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;while(cts)&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if connected break&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;cts.wait(1)&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;return connected&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="610" width="210" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-59" value="AnTcpClient" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1241" y="90" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-61" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;exitX=1.133;exitY=0.092;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-30">
+          <mxGeometry x="0.5091" y="-4" width="80" relative="1" as="geometry">
+            <mxPoint x="146.32999999999993" y="379.15" as="sourcePoint" />
+            <mxPoint x="560" y="386" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-62" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1316" y="660" width="10" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-63" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;exitX=0.5;exitY=1;rounded=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-59" target="S3Ig7KOjezHUJ2qZzQC2-62">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="1290" y="880" as="targetPoint" />
+            <mxPoint x="1290" y="120" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-64" value="&lt;div&gt;Client.Connect() {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;Client = new TcpClient(Ip, Port);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;Stream = Client.GetStream();&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;Reader = new BinaryReader(Stream);&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="660" width="235" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-53" value="param is options(mode host port)&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;areaDB&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;dataConfig&lt;br&gt;scp = new StartupConfigPathing&lt;br&gt;if scp.type = remotev3 then&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;v3_api = new&amp;nbsp;RemotePathingAPIV3 &lt;font color=&quot;#ff0000&quot;&gt;//1&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if v3_api.PingServer//&lt;font color=&quot;#ff0000&quot;&gt;2&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;font color=&quot;#ff0000&quot;&gt;return v3_api&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;v3_api.Dispose()&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;failed&lt;br&gt;if scp.type = remotev1 || v3_api failed&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;v1_api = new RemotePathingAPI &lt;font color=&quot;#ff0000&quot;&gt;//3&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;task.run(v1_api.PingServer) &lt;font color=&quot;#ff0000&quot;&gt;//4&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;task.wait()&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;if task.Result&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;font color=&quot;#ff0000&quot;&gt;return v1_api&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;success&lt;br&gt;loc_api = new LocalPathingApi&lt;font color=&quot;#ff0000&quot;&gt; //5-6&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;return loc_api&amp;nbsp;&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="775" y="600" width="260" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-70" value="&lt;span style=&quot;&quot;&gt;3.RemotePathingAPI&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;url = http://{host}:{port}/api/PPather/SelfTest&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;4.PingServer&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;client = new HttpClient()&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;response = client.GetStringAsync(url)&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;return Deserialize&amp;lt;bool&amp;gt;(result)&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="820" width="290" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-71" value="5.PPatherService&lt;br&gt;ContinentDB.Init(areaDB)&lt;br&gt;Delete All files in PPather Dir&lt;br&gt;&lt;br&gt;6.LocalPathingApi&lt;br&gt;通过MPQTriangleSupplier.GetArchiveNames&lt;br&gt;检查目录是否有MPQ文件" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="950" width="246" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
