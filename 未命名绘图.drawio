@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-15T23:42:59.383Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="TB-MH9BslOM9zWqmQW9e" version="20.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-15T23:59:46.300Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33" etag="wE1U61lGfR1mIGZS_Ilb" version="20.3.1" type="github">
   <diagram id="PhULyKFc4fnvmoWd6CRj" name="第 1 页">
     <mxGraphModel dx="1926" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -261,8 +261,8 @@
         <mxCell id="S3Ig7KOjezHUJ2qZzQC2-79" value="dataConfig、cts.Token、autoResetEvent&lt;br&gt;&lt;br&gt;thread&amp;nbsp;ReadArea start&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&amp;nbsp; &amp;nbsp; CurrentArea - areaId.json&lt;br&gt;(auto.set一次执行一次)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="1594" y="860" width="166" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-80" value="&lt;span style=&quot;&quot;&gt;addonReader(logger,addonDataProvider,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;autoResetEvent, areaDB, worldMapAreaDB,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;itemDB, creatureDB, spellDB, talentDB)&lt;br&gt;&lt;br&gt;&lt;div&gt;BotController(logger, env, StartupClientVersion,&lt;span style=&quot;background-color: initial;&quot;&gt;CancellationTokenSource,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;IPPather, IGrindSessionDAO, DataConfig dataConfig,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;WowProcess, WowScreen, WowProcessInput ,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ExecGameCommand, Wait, IAddonReader,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MinimapNodeFinder)&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="355" y="970" width="350" height="150" as="geometry" />
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-80" value="&lt;span style=&quot;&quot;&gt;addonReader(logger,addonDataProvider,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;autoResetEvent, areaDB, worldMapAreaDB,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;itemDB, creatureDB, spellDB, talentDB)&lt;br&gt;&lt;br&gt;&lt;div&gt;BotController(logger, env, StartupClientVersion,&lt;span style=&quot;background-color: initial;&quot;&gt;CancellationTokenSource,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;IPPather, IGrindSessionDAO, DataConfig dataConfig,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;WowProcess, WowScreen, WowProcessInput ,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ExecGameCommand, Wait, IAddonReader,&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MinimapNodeFinder)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;环形缓冲区：ScreenLatencys、NPCLatencys&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;br&gt;Thread AddonThread Start&lt;br&gt;&lt;br&gt;IF env is BlazorFrontend&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;WApi.Version = scv.Version&lt;br&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;	&lt;/span&gt;Thread FrontendThread Start&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;循环&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="355" y="970" width="355" height="290" as="geometry" />
         </mxCell>
         <mxCell id="S3Ig7KOjezHUJ2qZzQC2-81" value="AddonReader" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
           <mxGeometry x="750" y="930" width="160" height="30" as="geometry" />
@@ -284,6 +284,49 @@
         </mxCell>
         <mxCell id="S3Ig7KOjezHUJ2qZzQC2-85" value="logger、addonDataProvider、&lt;br&gt;autoResetEvent、areaDB、&lt;br&gt;worldMapAreaDB、itemDB、creatureDB&lt;br&gt;&lt;br&gt;CombatLog(64:cDamageDone 65:cDamageTaken 66:cDead 67:cTargetMiss)&lt;br&gt;&lt;br&gt;EquipmentReader(ItemDb, 23:cSlotNum, 24:cItemId)-&amp;nbsp;OnEquipmentChanged - 在read中invoke - 在bagreader和SkinGoal绑定&lt;br&gt;&lt;br&gt;BagReader(ItemDb,EquipmentReader,&lt;br&gt;20:cbagMeta,21:citemNumCount,22:cItemId)&lt;br&gt;OnEquipmentChanged&amp;nbsp;+=OnEquipmentChanged&lt;br&gt;&lt;br&gt;ActionBarCostReader(35:cActionbarMeta,&lt;br&gt;36:cActionbarNum)&lt;br&gt;OnActionCostReset&lt;br&gt;&lt;br&gt;GossipReader(int cGossip)&lt;br&gt;SpellBookReader(cSpellId,&amp;nbsp; spellDB)&lt;br&gt;&lt;br&gt;PlayerReader(IAddonDataProvider , WorldMapAreaDB )&lt;br&gt;LevelTracker(AddonReader addonReader)&lt;br&gt;TalentReader(72:cTalent,PlayerReader,talentDB)&lt;br&gt;&lt;br&gt;CurrentAction&amp;lt;ActionBarBits&amp;gt;(params int[] cells) - 25~29&lt;br&gt;UsableAction&amp;lt;ActionBarBits&amp;gt;(params int[] cells) - 30~34&lt;br&gt;&lt;br&gt;PlayerBuffTimeReader(79:cTextureId,80:cDurationSec) - data.clear()&lt;br&gt;&lt;br&gt;TargetDebuffTimeReader(81:cTextureId 82:cDurationSec) - data.clear()&lt;br&gt;&lt;br&gt;AuraTimeReader(83:cTextureId, 84:int cDurationSec) - data.clear()&lt;br&gt;&lt;br&gt;lastUpdate now" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;dashed=1;dashPattern=1 4;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="840" y="1010" width="240" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-86" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=0.2;entryY=0.428;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="S3Ig7KOjezHUJ2qZzQC2-83">
+          <mxGeometry x="0.5091" y="-4" width="80" relative="1" as="geometry">
+            <mxPoint x="350" y="1020" as="sourcePoint" />
+            <mxPoint x="1586" y="899.0450000000001" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-87" value="AddonThread:Thread" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="150" y="960" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-88" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;rounded=0;startArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-89">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="230" y="1210" as="targetPoint" />
+            <mxPoint x="230" y="1030" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-89" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1040" width="10" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-90" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;rounded=0;startArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-87" target="S3Ig7KOjezHUJ2qZzQC2-89">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="230" y="1210" as="targetPoint" />
+            <mxPoint x="230" y="990" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-91" value="AddonThread:Thread" style="shape=rect;html=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="960" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-92" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;rounded=0;startArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-93">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="30" y="1210" as="targetPoint" />
+            <mxPoint x="30" y="1030" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-93" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="25" y="1040" width="10" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="S3Ig7KOjezHUJ2qZzQC2-94" value="" style="edgeStyle=none;html=1;dashed=1;endArrow=none;align=center;verticalAlign=bottom;rounded=0;startArrow=none;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="S3Ig7KOjezHUJ2qZzQC2-91" target="S3Ig7KOjezHUJ2qZzQC2-93">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="30" y="1210" as="targetPoint" />
+            <mxPoint x="30" y="990" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
