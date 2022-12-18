@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2022-12-18T19:04:30.951Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="NfcmnaKN0w-5_MCWkm2i" type="github"><diagram id="k6QFrLoMI7XAiK7r2arB">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-18T20:34:57.834Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="xuEap6tKEam462Vv_7QJ" type="github">
+  <diagram id="uc2dsn9P-SxqrpjeY-UU" name="Page-1">
+    <mxGraphModel dx="1369" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="210" width="530" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-2" value="数据抽象&lt;br&gt;算平均价的函数不是接口，不公开给类的用户" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="220" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-3" value="常量成员函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="320" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-4" value="成员函数隐式inline" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="220" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-5" value="内声明，内外定义" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="270" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-6" value="模拟复合运算符+=" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="130" y="420" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-7" value="非成员函数如果是类的接口&lt;br&gt;因此他们与类声明在同一个头文件中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="320" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-8" value="IO对象只能引用，不能复制&lt;br&gt;IO对象会修改，不能是底层const" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="220" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-9" value="&lt;br&gt;默认构造函数在以下两种情况下的行为：&lt;br&gt;1、有类内初始值&lt;br&gt;2、没有..(进行默认初始化）&lt;br&gt;默认初始化不一定都有效" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="320" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-10" value="拷贝、复制和析构&lt;br&gt;没有定义时，编译器提供合成的默认版本&lt;br&gt;&lt;br&gt;堆上的数据拷贝不能依赖于编译器合成的版本&lt;br&gt;可以依赖vector和string" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="420" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-12" value="右值：取不到地址的表达式&lt;br&gt;如5；&amp;amp;a (&amp;amp; &amp;amp;a对地址取地址)&lt;br&gt;左值：能取到地址的表达式&lt;br&gt;a;&lt;br&gt;- 1常量对象为代表的左值不能作为赋值语句的左侧运算对象&lt;br&gt;const int a = 3;&lt;br&gt;a=4;&lt;br&gt;-2某些表达式的求值结果是对象，但他们是右值&lt;br&gt;如 a + 1 它返回临时对象，就没办法取到这个临时对象的地址&lt;br&gt;&lt;br&gt;3当一个对象被当作右值的时候，用得是对象的值（内存中的内容）&lt;br&gt;4当一个对象被当作左值的时候，用得是对象的身份（内存中的位置）&lt;br&gt;&lt;br&gt;5左值可以当成右值，实际使用的是它的内容（值）&lt;br&gt;6不能把右值当成左值 （没有地址，没办法往里面放东西）&lt;br&gt;&lt;br&gt;7取地址符作用于一个左值运算对象，返回一个指向该运算对象的指针，这个指针是一个右值。（区分指针变量和临时指针对象&lt;br&gt;）&lt;br&gt;(&amp;amp;a) 为一个指向a的指针，不能对它取地址，所以（&amp;amp;a）是右值&lt;br&gt;而 int *p = &amp;amp;a&amp;nbsp; ，可以对P取地址，所以p是个左值&lt;br&gt;8 如果表达式的求值结果是左值 decltype作用于该表达式（不是变量）的到一个引用类型 int *p&lt;br&gt;decltype(*p) - int&amp;amp;&amp;nbsp; 解引用得到一个指针指向的”对象” 即是左值 那就得到引用类型&lt;br&gt;decltype(&amp;amp;p) &amp;amp;p为一个右值，结果就是int** 指向指针的指针" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="710" width="550" height="380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
