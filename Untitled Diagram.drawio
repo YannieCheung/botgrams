@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-18T20:38:41.244Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="t5bypnNJaL6d59iH0IKN" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-18T20:41:53.505Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="8LXOt0qPVKf5jmSWXGYS" type="github">
   <diagram id="uc2dsn9P-SxqrpjeY-UU" name="Page-1">
     <mxGraphModel dx="1369" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,8 +7,8 @@
         <mxCell id="nfsQdx0FcawMK_jn6A5h-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="210" width="530" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="nfsQdx0FcawMK_jn6A5h-2" value="数据抽象&lt;br&gt;算平均价的函数不是接口，不公开给类的用户" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="220" width="150" height="90" as="geometry" />
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-2" value="数据抽象&lt;br&gt;算平均价的函数不是接口，不公开给类的用户&lt;br&gt;&lt;br&gt;通过访问修饰符加强类的封装 性&lt;br&gt;public 不变&lt;br&gt;private 实现细节 可以变&lt;br&gt;那么用户就不需要变" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="230" height="140" as="geometry" />
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-3" value="常量成员函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="130" y="320" width="150" height="90" as="geometry" />
