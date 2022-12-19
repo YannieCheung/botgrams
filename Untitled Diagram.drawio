@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-12-19T16:44:18.753Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="nAOkXM6fAQ8KAUS16aWN" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-19T21:38:30.589Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="SQMRqqkxTF4Y1-9L5-N5" type="github">
   <diagram id="uc2dsn9P-SxqrpjeY-UU" name="Page-1">
-    <mxGraphModel dx="1369" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2196" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="nfsQdx0FcawMK_jn6A5h-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="210" width="530" height="760" as="geometry" />
+          <mxGeometry x="120" y="210" width="530" height="970" as="geometry" />
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-2" value="数据抽象&lt;br&gt;算平均价的函数不是接口，不公开给类的用户&lt;br&gt;&lt;br&gt;通过访问修饰符加强类的封装 性&lt;br&gt;public 不变&lt;br&gt;private 实现细节 可以变&lt;br&gt;那么用户就不需要变" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="170" width="230" height="140" as="geometry" />
@@ -35,7 +35,7 @@
           <mxGeometry x="290" y="420" width="150" height="90" as="geometry" />
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-12" value="右值：取不到地址的表达式&lt;br&gt;如5；&amp;amp;a (&amp;amp; &amp;amp;a对地址取地址)&lt;br&gt;左值：能取到地址的表达式&lt;br&gt;a;&lt;br&gt;- 1常量对象为代表的左值不能作为赋值语句的左侧运算对象&lt;br&gt;const int a = 3;&lt;br&gt;a=4;&lt;br&gt;-2某些表达式的求值结果是对象，但他们是右值&lt;br&gt;如 a + 1 它返回临时对象，就没办法取到这个临时对象的地址&lt;br&gt;&lt;br&gt;3当一个对象被当作右值的时候，用得是对象的值（内存中的内容）&lt;br&gt;4当一个对象被当作左值的时候，用得是对象的身份（内存中的位置）&lt;br&gt;&lt;br&gt;5左值可以当成右值，实际使用的是它的内容（值）&lt;br&gt;6不能把右值当成左值 （没有地址，没办法往里面放东西）&lt;br&gt;&lt;br&gt;7取地址符作用于一个左值运算对象，返回一个指向该运算对象的指针，这个指针是一个右值。（区分指针变量和临时指针对象&lt;br&gt;）&lt;br&gt;(&amp;amp;a) 为一个指向a的指针，不能对它取地址，所以（&amp;amp;a）是右值&lt;br&gt;而 int *p = &amp;amp;a&amp;nbsp; ，可以对P取地址，所以p是个左值&lt;br&gt;8 如果表达式的求值结果是左值 decltype作用于该表达式（不是变量）的到一个引用类型 int *p&lt;br&gt;decltype(*p) - int&amp;amp;&amp;nbsp; 解引用得到一个指针指向的”对象” 即是左值 那就得到引用类型&lt;br&gt;decltype(&amp;amp;p) &amp;amp;p为一个右值，结果就是int** 指向指针的指针&lt;br&gt;&lt;br&gt;算术运算符的运算对象和求值结果都是右值&lt;br&gt;赋值运算符的左侧运算对象是一个左值" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="990" width="550" height="380" as="geometry" />
+          <mxGeometry x="230" y="1260" width="550" height="380" as="geometry" />
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-13" target="nfsQdx0FcawMK_jn6A5h-2">
           <mxGeometry relative="1" as="geometry">
@@ -62,8 +62,93 @@
         <mxCell id="nfsQdx0FcawMK_jn6A5h-19" value="类与类的友元关系&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;成员函数为友元的步骤很重要，使用它需要修改很多结构。&lt;br&gt;&lt;/font&gt;&lt;br&gt;重载函数是不同的函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="290" y="810" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="nfsQdx0FcawMK_jn6A5h-20" value="类的作用域&lt;br&gt;返回类型不在作用域内&lt;br&gt;&lt;br&gt;名字查找：&lt;br&gt;1、先内部查找（使用名字之前的位置），找不到到内外再找&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;这里会有个重复定义的问题&lt;/font&gt;&lt;br&gt;&lt;br&gt;2、成员函数定义中的名字查找&lt;br&gt;内-&amp;gt;中-&amp;gt;全局作用域&lt;br&gt;例子username" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-20" value="类的作用域&lt;br&gt;返回类型不在作用域内&lt;br&gt;&lt;br&gt;名字查找：&lt;br&gt;1、先内部查找（使用名字之前的位置），找不到到内外再找&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;这里会有个重复定义的问题&lt;/font&gt;&lt;br&gt;&lt;br&gt;2、成员函数定义中的名字查找&lt;br&gt;内-&amp;gt;中-&amp;gt;全局作用域&lt;br&gt;例子username&lt;br&gt;3、在外部定义的成员函数还有个附加条件&lt;br&gt;全局作用域中的名字必须出现在函数定义之前" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="810" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-21" target="nfsQdx0FcawMK_jn6A5h-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-21" target="nfsQdx0FcawMK_jn6A5h-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-21" target="nfsQdx0FcawMK_jn6A5h-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-21" target="nfsQdx0FcawMK_jn6A5h-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="635" />
+              <mxPoint x="840" y="730" />
+              <mxPoint x="920" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-21" value="构造函数" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="707" y="575" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-22" target="nfsQdx0FcawMK_jn6A5h-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-22" value="赋值" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-24" target="nfsQdx0FcawMK_jn6A5h-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-24" value="数据成员初始化&lt;br&gt;（初始化列表）" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="870" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-27" value="差异&lt;br&gt;引用、const、无默认构造函数的类型" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="585" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-31" value="初始化列表的初始化顺序与类定义的顺序一致&lt;br&gt;两条建议" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="707" y="715" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-34" target="nfsQdx0FcawMK_jn6A5h-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-34" target="nfsQdx0FcawMK_jn6A5h-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-34" value="默认参数的构造函数&lt;br&gt;&lt;br&gt;一个构造函数为所有参数都提供这玩意，也就定义了默认构造函数" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="765" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-35" value="委托构造函数&lt;br&gt;把自己的一些（或全部）工作交给其他构造函数&lt;br&gt;委托到的函数的函数体也会执行" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="860" y="890" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-38" target="nfsQdx0FcawMK_jn6A5h-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-38" value="默认构造函数会在值初始化（内置类型 int i 默认0）或默认初始化（类类型string）时被调用&lt;br&gt;、&lt;br&gt;默认构造函数的调用不需要加括号，否则就变成了一个函数声&lt;br&gt;明" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="710" width="120" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-41" value="类类型的隐式转换&lt;br&gt;转换构造函数&lt;br&gt;&lt;br&gt;值允许一步类类型的转换&lt;br&gt;&lt;br&gt;抑制转换构造函数&lt;br&gt;explicit&lt;br&gt;1、不像inline，explicit只能用在类内声明处，类外定义处不可使用，&lt;br&gt;2、构造一个对象时，explicit构造函数只能用直接初始化构造，不能用复制初始化构造对象&lt;br&gt;3、explicit可以用于显式的类型转换&lt;br&gt;static_cast" style="whiteSpace=wrap;html=1;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="905" width="230" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-43" value="聚合类&lt;br&gt;可按顺序使用初始化列表初始化" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="370" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-44" target="nfsQdx0FcawMK_jn6A5h-47">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="1030" />
+              <mxPoint x="30" y="1030" />
+              <mxPoint x="30" y="1060" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="nfsQdx0FcawMK_jn6A5h-44" target="nfsQdx0FcawMK_jn6A5h-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-44" value="字面值类&lt;br&gt;类型萃取 typeid(xx).name()&lt;br&gt;&lt;br&gt;1、数据成员必须都是字面值类型&lt;br&gt;2、类必须至少有一个constexpr构造函数&lt;br&gt;3、数据成员的类内初始值 内置类型：必须是一条常量表达式 类类型：使用成员自己的constexpr构造函数&lt;br&gt;4、类必须使用析构函数的默认定义" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="920" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-46" value="除了算术类型、复合类型外，某些类也是字面值类型" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="935" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-47" value="constexpr构造函数体一般是空的&lt;br&gt;因为&lt;br&gt;constexpr函数只能有返回语句&lt;br&gt;而构造函数不能有返回语句" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1030" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
