@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-19T15:59:00.614Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="eG6SHBURXJJ0TyuUA5iR" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-19T16:31:09.591Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="Cy47uDFtRljvbLVtmlWF" type="github">
   <diagram id="uc2dsn9P-SxqrpjeY-UU" name="Page-1">
     <mxGraphModel dx="1369" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -62,8 +62,8 @@
         <mxCell id="nfsQdx0FcawMK_jn6A5h-19" value="类与类的友元关系&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;成员函数为友元的步骤很重要，使用它需要修改很多结构。&lt;br&gt;&lt;/font&gt;&lt;br&gt;重载函数是不同的函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="290" y="810" width="150" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="nfsQdx0FcawMK_jn6A5h-20" value="类的作用域&lt;br&gt;返回类型不在作用域" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="370" width="150" height="40" as="geometry" />
+        <mxCell id="nfsQdx0FcawMK_jn6A5h-20" value="类的作用域&lt;br&gt;返回类型不在作用域内&lt;br&gt;&lt;br&gt;名字查找：&lt;br&gt;1、先内部查找（使用名字之前的位置），找不到到内外再找&lt;br&gt;&lt;font color=&quot;#ff3333&quot;&gt;这里会有个重复定义的问题&lt;/font&gt;&lt;br&gt;&lt;br&gt;2、成员函数定义中的名字查找&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="810" width="150" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
