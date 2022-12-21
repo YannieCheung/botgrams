@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-12-20T19:13:06.205Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="P3z0kQHiZg5n1r4NyUE_" type="github">
+<mxfile host="app.diagrams.net" modified="2022-12-21T20:40:44.816Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.46" version="20.7.2" etag="V9nmLDusEYt5_RnuYQtQ" type="github">
   <diagram id="uc2dsn9P-SxqrpjeY-UU" name="Page-1">
     <mxGraphModel dx="2196" dy="920" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="120" y="210" width="530" height="970" as="geometry" />
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-2" value="数据抽象&lt;br&gt;算平均价的函数不是接口，不公开给类的用户&lt;br&gt;&lt;br&gt;通过访问修饰符加强类的封装 性&lt;br&gt;public 不变&lt;br&gt;private 实现细节 可以变&lt;br&gt;那么用户就不需要变" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="170" width="230" height="140" as="geometry" />
+          <mxGeometry x="-20" y="140" width="230" height="140" as="geometry" />
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-3" value="常量成员函数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="130" y="320" width="150" height="90" as="geometry" />
@@ -45,7 +45,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-13" value="在类中定义类型名称&lt;br&gt;（有访问限制）&lt;br&gt;&lt;br&gt;Screen的用户不需要知道Screen使用了一个string对象来存放它的数据，pos隐藏了细节，以后string可以被改变，用其他对象存放数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="130" y="560" width="150" height="90" as="geometry" />
+          <mxGeometry x="130" y="520" width="150" height="130" as="geometry" />
         </mxCell>
         <mxCell id="nfsQdx0FcawMK_jn6A5h-14" value="可变数据成员&lt;br&gt;mutable&lt;br&gt;使常量对象的数据改动需求得以实现" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="290" y="530" width="150" height="90" as="geometry" />
